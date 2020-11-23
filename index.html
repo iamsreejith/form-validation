@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ 
+    <div>
+        <form name="myform" method="get" action="welcome.html" onsubmit="return validateform()" >
+            First Name: <input placeholder="First Name" type="text"  name="fname" >  <br/> 
+            <span id="fnamemsg"></span>  <br>
+            Second Name: <input placeholder="Second Name" type="text"  name="sname" >  <br/> 
+            <span id="snamemsg"></span>  <br>
+            Email: <input placeholder="Email" id="email" type="text" name="email" ><br/> 
+            <span id="emailmsg"></span> <br>
+            phone: <input placeholder="Phone" id="number" type="text" name="number" ><br/>  
+            <span id="phonemsg"></span><br>
+            Password: <input placeholder="Password" id="password" type="text" name="password" onchange="return checkpass()" ><br/>  
+            <span id="passmsg"></span> <br>
+            Confirm Pass: <input placeholder="Confirm" id="cpassword" type="text" name="cpassword" ><br/>  
+            <span id="cpassmsg"></span> <br>
+            <input type="submit" value="register">  
+            </form>
+    </div>
+
+
+
+    <!-- js script -->
+    <script src="js/script.js"></script>
+
+
+</body>
+</html>
